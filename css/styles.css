@@ -1,0 +1,190 @@
+/* Caleb Crownover    Last Worked: 05/03/18 */
+
+/* Mobile First*/
+
+/*style to color background and text*/
+body{
+    background-color: #26413C;
+    color: #8AB0AB;
+}
+
+/*style to center header*/
+header{
+    text-align: center;
+    padding-bottom: 1em;
+    padding-top: .7em;
+}
+
+/*style to minimize header img make resizable and rotate*/
+header img{
+    transform: rotate(270deg);
+    max-height: 100px;
+    padding: 3em;
+}
+
+/*style to color header background (just text w/ mark)*/
+header mark{
+    background-color: #0BC9CD;
+    padding: .5em;
+    border-radius: 2em;
+    box-shadow: 0.1em 0.1em 0.1em 0.1em rgb(88, 139, 139);
+}
+
+/*style for nav li to remove bullets*/
+nav li{
+    list-style-type: none;
+    padding: 1em;
+}
+
+/*style for nav a for better color*/
+nav a{
+    font-size: 1.25em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/*styles for pseudo classes of nav*/
+nav a:link{
+    text-decoration: none;
+}
+nav a:visited{
+    text-decoration: none;
+    color: #ABD2FA;
+}
+nav a:hover{
+    color: #7692FF;
+}
+nav a:active{
+    color: #091540;
+}
+
+/*style for footer to center and make small*/
+footer{
+    text-align: right;
+    color: #FFFFFF;
+    font-size: .7em;
+    overflow: hidden;
+    position: fixed;
+    bottom: 2px;
+    width: 98%;
+    z-index: -1;/*allows to click on submit/reset buttons*/
+}
+
+/*style for main a to make contact links more visible*/
+main a{
+    padding: 0.3em;
+    border-radius: 1em;
+    background-color: #1B2CC1;
+    color: #B3CBB9;
+    text-decoration: none;
+}
+/*style for pseudo classes of contact links*/
+main a:link{
+    text-decoration: none;
+}
+main a:visited{
+    text-decoration: none;
+    color: #E6EBE0;
+}
+main a:hover{
+    color: #FFFFFF;
+}
+main a:active{
+    text-decoration: underline;
+    color: #ED6A5A;
+}
+
+/*style for main p for more padding*/
+main p{
+    padding: 1em;
+}
+
+/*style for table color*/
+table{
+    background-color: #7798AB;
+    color: #0D1B1E;
+    text-align:center;
+    width: 90%;
+    margin: auto;
+}
+
+/*style for table header elements to color*/
+th{
+    background-color: #3D518C;
+    color: #ABD2FA;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/*style to center table data elements*/
+td{
+    text-align: center;
+}
+
+/*style for caption color to make more visible*/
+caption{
+    color: #E8DCB9;
+    font-size: 1.5em;
+    padding: 0.4em;
+}
+
+/*style for form to align*/
+form{
+    display: block;
+}
+label{
+    display: block;
+    margin-bottom: .25em;
+}
+
+
+/**********************************************************************************************/
+/*Tablet Viewport*/
+@media only screen and (min-width: 481px){
+
+    /*style for making nav links horizontal*/
+    nav li{
+        display: block;
+        background-color: #37718E;
+        text-align: center;
+        border-radius: 2em;
+        margin-top: 1em;
+    }
+
+    nav a{
+        text-align: center;
+    }
+
+    /*style to make table larger for larger port*/
+    table{
+        padding: 0.5em;
+        font-size: 14pt;
+    }
+
+    /*style for main to center*/
+    main{
+        text-align: center;
+    }
+}
+
+
+/**********************************************************************************************/
+/*Desktop Viewport*/
+@media only screen and (min-width: 769px){
+
+    /*style to separate nav li links*/
+    nav li{
+        display: inline;
+        padding-left: 3em;
+        padding-right: 3em;
+        border-radius: 0;
+        border: 3px solid #ABD2FA;
+    }
+
+    /*style for nav to center*/
+    nav{
+        text-align: center;
+        margin: auto;
+    }
+
+}
